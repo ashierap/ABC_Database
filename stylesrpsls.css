@@ -1,0 +1,49 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+#game-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+#choices-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.choice {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#result-container {
+    margin-bottom: 20px;
+}
+
+#score {
+    color: #555;
+}
+
+#restart-btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
