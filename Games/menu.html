@@ -3,52 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Menu</title>
-    
-    <!-- Include global CSS styles here -->
-    <link rel="stylesheet" href="stylesmenu.css">
-    
-    <!-- Include individual CSS files for each game if needed -->
-    <link rel="stylesheet" href="Games/snake/stylessnake.css">
-    <link rel="stylesheet" href="Games/1_UpFrogger/styles1_UpFrogger.css">
-    <link rel="stylesheet" href="Games/venture/stylesventure.css">
-    <link rel="stylesheet" href="Games/rpsls/stylesrpsls.css">
+    <title>ABC Devs</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .game-link {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #4caf50;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #create-player-btn {
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #3498db;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #quit-btn {
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #e74c3c;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #player-form {
+            display: none;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        #player-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
     <h1>Game Menu</h1>
-    
-    <!-- Buttons to run each game -->
-    <button onclick="runSnakeGame()">Run Snake Game</button>
-    <button onclick="run1UpFroggerGame()">Run 1Up Frogger Game</button>
-    <button onclick="runVentureGame()">Run Venture Game</button>
-    <button onclick="runRpslsGame()">Run RPSLS Game</button>
+    <a href="snake/index.html" class="game-link">Snake Game</a>
+    <a href="1_UpFrogger/index.html" class="game-link">1-Up Frogger Game</a>
+    <a href="rpsls/index.html" class="game-link">Rock Paper Scissors Lizard Spock Game</a>
+    <a href="venture/index.html" class="game-link">Adventure Game</a>
 
-    <!-- Link to each game's JavaScript file -->
-    <script src="Games/snake/snake.js"></script>
-    <script src="Games/1_UpFrogger/1_UpFrogger.js"></script>
-    <script src="Games/venture/venture.js"></script>
-    <script src="Games/rpsls/rpsls.js"></script>
+    <button id="create-player-btn" onclick="showPlayerForm()">Create Player</button>
+    <button id="quit-btn" onclick="quitGame()">Quit</button>
 
-    <!-- JavaScript functions to run each game -->
+    <div id="player-form">
+        <form>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="userName">User Name:</label>
+            <input type="text" id="userName" name="userName" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
     <script>
-        function runSnakeGame() {
-            // Add code to initialize and run the Snake game
-            console.log("Snake game is running!");
+        function showPlayerForm() {
+            document.getElementById('player-form').style.display = 'block';
+            document.getElementById('create-player-btn').style.display = 'none';
+            document.getElementById('quit-btn').style.display = 'none';
         }
 
-        function runFroggerGame() {
-            // Add code to initialize and run the Frogger game
-            console.log("Frogger game is running!");
-        }
-
-        function runVentureGame() {
-            // Add code to initialize and run the Venture game
-            console.log("Venture game is running!");
-        }
-
-        function runRpslsGame() {
-            // Add code to initialize and run the RPSLS game
-            console.log("RPSLS game is running!");
+        function quitGame() {
+            // Perform any actions needed before quitting the game
+            alert('Goodbye! Thanks for playing.');
+            // Close the window (may not work in all browsers)
+            window.close();
         }
     </script>
 </body>
