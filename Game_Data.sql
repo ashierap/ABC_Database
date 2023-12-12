@@ -10,7 +10,7 @@ CREATE TABLE PLAYER_INFO (
     PlayerId     SMALLINT NOT NULL AUTO_INCREMENT,
     FirstName    TINYTEXT,
     LastName     TINYTEXT,
-    UserName     TINYTEXT,
+    UserName     VARCHAR(50) UNIQUE,
     PRIMARY KEY (PlayerId)
 );
 
