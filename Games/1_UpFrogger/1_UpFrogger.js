@@ -1,3 +1,10 @@
+//Cameron is the greatest and made this code. You're welcome peasents
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('game');
     const context = canvas.getContext('2d');
