@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Menu</title>
+    
+    <!-- Include global CSS styles here -->
+    <link rel="stylesheet" href="stylesmenu.css">
+    
+    <!-- Include individual CSS files for each game if needed -->
+    <link rel="stylesheet" href="Games/snake/stylessnake.css">
+    <link rel="stylesheet" href="Games/frogger/styles1_UpFrogger.css">
+    <link rel="stylesheet" href="Games/venture/stylesventure.css">
+    <link rel="stylesheet" href="Games/rpsls/stylesrpsls.css">
+</head>
+<body>
+    <h1>Game Menu</h1>
+    
+    <!-- Buttons to run each game -->
+    <button onclick="runSnakeGame()">Run Snake Game</button>
+    <button onclick="runFroggerGame()">Run Frogger Game</button>
+    <button onclick="runVentureGame()">Run Venture Game</button>
+    <button onclick="runRpslsGame()">Run RPSLS Game</button>
+
+    <!-- Link to each game's JavaScript file -->
+    <script src="Games/snake/snake.js"></script>
+    <script src="Games/frogger/1_UpFrogger.js"></script>
+    <script src="Games/venture/venture.js"></script>
+    <script src="Games/rpsls/rpsls.js"></script>
+
+    <!-- JavaScript functions to run each game -->
+    <script>
+        function runSnakeGame() {
+            // Add code to initialize and run the Snake game
+            console.log("Snake game is running!");
+        }
+
+        function runFroggerGame() {
+            // Add code to initialize and run the Frogger game
+            console.log("Frogger game is running!");
+        }
+
+        function runVentureGame() {
+            // Add code to initialize and run the Venture game
+            console.log("Venture game is running!");
+        }
+
+        function runRpslsGame() {
+            // Add code to initialize and run the RPSLS game
+            console.log("RPSLS game is running!");
+        }
+    </script>
+</body>
+</html>
