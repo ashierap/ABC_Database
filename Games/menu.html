@@ -28,30 +28,7 @@
             cursor: pointer;
         }
 
-        #create-player-btn {
-            margin: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            text-decoration: none;
-            color: #fff;
-            background-color: #3498db;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        #quit-btn {
-            margin: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            text-decoration: none;
-            color: #fff;
-            background-color: #e74c3c;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
         #player-form {
-            display: none;
             max-width: 400px;
             margin: 20px auto;
         }
@@ -71,37 +48,5 @@
     <a href="rpsls/index.html" class="game-link">Rock Paper Scissors Lizard Spock Game</a>
     <a href="venture/index.html" class="game-link">Adventure Game</a>
 
-    <button id="create-player-btn" onclick="showPlayerForm()">Create Player</button>
-    <button id="quit-btn" onclick="quitGame()">Quit</button>
-
-    <div id="player-form">
-        <form>
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required>
-
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required>
-
-            <label for="userName">User Name:</label>
-            <input type="text" id="userName" name="userName" required>
-
-            <input type="submit" value="Submit">
-        </form>
-    </div>
-
-    <script>
-        function showPlayerForm() {
-            document.getElementById('player-form').style.display = 'block';
-            document.getElementById('create-player-btn').style.display = 'none';
-            document.getElementById('quit-btn').style.display = 'none';
-        }
-
-        function quitGame() {
-            // Perform any actions needed before quitting the game
-            alert('Goodbye! Thanks for playing.');
-            // Close the window (may not work in all browsers)
-            window.close();
-        }
-    </script>
 </body>
 </html>

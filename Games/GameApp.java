@@ -8,7 +8,7 @@ import java.util.Scanner;
  
  javac GameApp.java
  
- java -cp /home/codio/workspace/mysql-java-game-copy/mysql-connector-java-8.0.13.jar:.: GameApp
+ java -cp /home/codio/workspace/ABC_Database/mysql-connector-java-8.0.13.jar:.: GameApp
 
 */
 
@@ -24,8 +24,9 @@ public class GameApp {
    
             try{  
   
-                con=DriverManager.getConnection("jdbc:mysql://localhost/game?user=root");  
+                con=DriverManager.getConnection("jdbc:mysql://localhost/ABC_Database?user=root");  
  
+
                 Class.forName("com.mysql.cj.jdbc.Driver");  
  
                 while (option != 5) {
