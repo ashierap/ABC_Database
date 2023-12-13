@@ -608,6 +608,7 @@ public static void Leaderboard() {
 public static void playGame() {
         System.out.println("CLICK LINK TO LAUNCH GAME MENU");
         System.out.println("https://prospertrinity-olympicscholar.codio.io/ABC_Database/Games/menu.html");
+        System.out.println("https://amberyear-harrispedro.codio.io/ABC_Database/Games/menu.html");
     }
 
    public static void showProducts() {
