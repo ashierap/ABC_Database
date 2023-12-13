@@ -104,10 +104,10 @@ public static void findall() {
         String userName = sc.next();
 
         // Establish connection
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost/game?user=root");
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost/Game_Data?user=root");
 
         // Prepare the SQL statement for insertion
-        PreparedStatement stmt = con.prepareStatement("INSERT INTO PlayerInfo (FirstName, LastName, userName) VALUES (?, ?, ?)");
+        PreparedStatement stmt = con.prepareStatement("INSERT INTO PLAYER_INFO (FirstName, LastName, userName) VALUES (?, ?, ?)");
 
         // Set values for placeholders in the SQL statement
         stmt.setString(1, firstName);
@@ -673,4 +673,3 @@ public static void playGame() {
     }
 
 }
-
