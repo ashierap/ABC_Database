@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const head = { ...snake[0] };
 
         // Check if the fruit count is 50
-        if (fruitCount === 5) {
+        if (fruitCount === 50) {
     clearInterval(gameInterval); // Stop movement
     const elapsedTime = Math.floor((Date.now() - startTime) / 1000);
 
