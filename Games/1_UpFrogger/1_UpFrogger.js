@@ -431,11 +431,7 @@ function displayTimer() {
     checkScoredFroggers();
 
 }
-// Add this function to start the spin wheel
-function startSpinWheel() {
-    // Add your spin wheel logic here
-    // For example, you can change the speed of the spin wheel or perform other actions
-}
+
 
 
     document.addEventListener('keydown', function (e) {
